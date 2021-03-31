@@ -57,7 +57,7 @@ body {
 a {
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
-  color: #FDFDFF;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -67,9 +67,18 @@ ul {
   padding: 0;
 }
 
+h1 {
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  visibility: hidden;
+}
+
 .button {
   display: inline-block;
-  max-width: 29.8rem;
+  min-width: 29.8rem;
+  padding: 1.6rem 0;
   font-weight: 500;
   font-size: 1.6rem;
   text-align: center;
@@ -78,7 +87,7 @@ ul {
   background: -o-linear-gradient(336.04deg, #F9804B 1.49%, #FE9013 101.44%);
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
   border-radius: 0.5rem;
-  color: #FDFDFF;
+  color: #fff;
 }
 
 .button:hover {
@@ -122,7 +131,7 @@ ul {
 }
 
 .header {
-  background-color: #333B41;
+  background-color: #000;
   padding: 1.4rem 0;
 }
 
@@ -154,4 +163,59 @@ ul {
 .link-active {
   color: #F9804B;
   cursor: default;
+}
+
+.hero {
+  padding: 1.2rem 0 10rem;
+  background-image: url("assets/images/jpg/panda_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero__inner {
+  margin-left: auto;
+  margin-right: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.hero__ellipse {
+  margin-bottom: 6.5rem;
+  position: relative;
+  width: 46.5rem;
+  height: 46.5rem;
+  background: -o-linear-gradient(336.04deg, #F9804B 1.49%, #FE9013 101.44%);
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  border-radius: 50%;
+}
+
+.hero__titel {
+  position: absolute;
+  left: 7rem;
+  max-width: 50rem;
+  font-size: 10.6rem;
+  font-weight: 700;
+  line-height: 75%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.hero__titel span {
+  color: #FFEE2E;
+}
+
+.hero__btm {
+  margin-left: 20rem;
 }

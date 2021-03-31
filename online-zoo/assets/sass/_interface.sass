@@ -1,6 +1,7 @@
 .button
   display: inline-block
-  max-width: 29.8rem
+  min-width: 29.8rem
+  padding: 1.6rem 0
 
   font-weight: 500
   font-size: 1.6rem
@@ -13,9 +14,12 @@
   color: $white
   &:hover
     background-color: $green
+    
 
   &-primary
     border-radius: 2.5rem
+    
+    
 
     &:hover
       background-color: $green
@@ -30,7 +34,7 @@
   text-align: center
 
   color: #fff
-  border: 1.18841px solid #fff
+  border: 1.18841px solid $white
   &::before
     content: ''
     width: 12.03px
@@ -41,6 +45,4 @@
     background-image: url('assets/images/icons/bamboo.svg')
     background-repeat: no-repeat
 
-
-    
          
