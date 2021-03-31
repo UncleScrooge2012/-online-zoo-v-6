@@ -12,23 +12,35 @@
   border-radius: 0.5rem
   color: $white
   &:hover
-    background-color: @green
+    background-color: $green
 
   &-primary
     border-radius: 2.5rem
 
     &:hover
-      background-color: @green
+      background-color: $green
 
-  .logo
-    display: inline-block
+.logo
+  position: relative
+  display: inline-block
+  max-width: 82px
+  
+  font-size: 19.0145px
+  line-height: 120%
+  text-align: center
 
-    font-family: 'Roboto', sans-serif
-    font-size: 19.0145px
-    line-height: 120%
-    text-align: center
+  color: #fff
+  border: 1.18841px solid #fff
+  &::before
+    content: ''
+    width: 12.03px
+    height: 20.98px    
+    position: absolute
+    left: 11.8% 
+    top: 42.3%
+    background-image: url('assets/images/icons/bamboo.svg')
+    background-repeat: no-repeat
 
-    color: #fff
 
-    border:  1.18841px solid #fff
+    
          
