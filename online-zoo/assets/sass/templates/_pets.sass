@@ -1,0 +1,53 @@
+.pets
+  padding-bottom: 10rem
+  &__inner
+    display: flex    
+    flex-direction: column    
+    justify-content: center
+    align-items: center
+
+  &__list
+    margin-bottom: 8rem
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  &__item
+    margin-bottom: 2rem
+    border: 0.1rem solid $orang
+    border-radius: 0.5rem
+    color: $dark
+  &__info
+    padding: 0.6rem 1.2rem 1.4rem 1.6rem
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  &__imag span 
+
+.item-info
+  &__item
+    font-size: 2.2rem
+    font-weight: 500
+    line-height: 140%
+  &__subtitel
+    font-size: 1.5rem
+    font-weight: 300
+    line-height: 120%
+
+.panda-active
+  position: relative
+.panda-active span
+  display: none
+  position: absolute
+  font-size: 1.6rem
+  font-weight: 500
+  color: $white
+  left: 20%
+  top: 90%
+
+.panda-active:hover span  
+  display: inline-block 
+  top: 40%
+  
+
+
