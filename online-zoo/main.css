@@ -475,3 +475,90 @@ h1 {
   height: 35.08px;
   background-image: url("assets/images/icons/arow-r.svg");
 }
+
+.testimonials {
+  padding: 14rem 0 18rem;
+}
+
+.testimonials__titel {
+  margin-bottom: 4.7rem;
+  font-size: 3.6rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+.testimonials__inner {
+  margin-bottom: 3.2rem;
+}
+
+.testimonials__list {
+  margin-bottom: 2.2rem;
+}
+
+.testimonials__item {
+  position: relative;
+  display: inline-block;
+  max-width: 26.8rem;
+  max-height: 39.1rem;
+  padding: 1.5rem 1.5rem 1.9rem 1.6rem;
+  background-clip: padding-box;
+  background-color: #fff;
+  border: 2px solid transparent;
+  border-radius: 20px;
+}
+
+.testimonials__item:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  margin: -2px;
+  border-radius: inherit;
+  background: -o-linear-gradient(45deg, rgba(254, 189, 171, 0.74), rgba(243, 169, 248, 0.66), #e0d8f0, #eaf7fe, #eaf7fe);
+  background: linear-gradient(45deg, rgba(254, 189, 171, 0.74), rgba(243, 169, 248, 0.66), #e0d8f0, #eaf7fe, #eaf7fe);
+}
+
+.testimonials__item + li {
+  margin-left: 2.3rem;
+}
+
+.testimonials-item__swech {
+  width: 60rem;
+  position: relative;
+  background-clip: padding-box;
+  background-color: #fff;
+  border: 0.5px solid transparent;
+  border-radius: 5px;
+}
+
+.testimonials-item__swech:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  margin: -0.5px;
+  border-radius: inherit;
+  background: -o-linear-gradient(45deg, rgba(254, 189, 171, 0.74), rgba(243, 169, 248, 0.66), #e0d8f0, #eaf7fe, #eaf7fe);
+  background: linear-gradient(45deg, rgba(254, 189, 171, 0.74), rgba(243, 169, 248, 0.66), #e0d8f0, #eaf7fe, #eaf7fe);
+}
+
+.testimonials-item__swech span {
+  display: inline-block;
+  height: 6px;
+  width: 115px;
+  background-color: #F9804B;
+  border-radius: 5px;
+}
+
+.testimonials-item__text {
+  font-size: 1.5rem;
+  line-height: 120%;
+  max-height: 30.9rem;
+  overflow: hidden;
+}
