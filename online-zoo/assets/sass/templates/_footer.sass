@@ -1,0 +1,77 @@
+.footer 
+  padding: 4rem 0 5rem
+  background-color: #111115
+  color: $white
+
+  &__inner
+
+    &-top
+      display: flex
+      justify-content: space-between
+      align-items: start
+      margin-bottom: 3.6rem
+
+    &-bottom
+      display: flex
+      justify-content: space-between
+      align-items: flex-end
+      padding: 4.4rem 0 5rem
+    &-item
+      & + li
+        margin-top: 1rem
+      & a
+        display: inline-block
+        padding-left: 3.8rem
+        position: relative
+        &::before
+          content: ''
+          position: absolute
+          width: 26px
+          height: 26px
+          border-radius: 50%
+          background-color: $gray
+          background-repeat: no-repeat
+          background-position: center center
+          left: 0
+
+
+
+    &-designed
+      max-width: 23.5rem
+      line-height: 2.08rem
+      font-weight: 300
+      & span
+        display: block
+        margin-top: 1rem
+      
+
+  &__form
+
+    &-titel
+      margin-bottom: 1.4rem
+      font-size: 2.4rem
+      line-height: 120%
+      font-weight: 400
+    
+    &-email
+      padding: 1rem 0.7rem 1rem 1rem
+      margin-right: 1rem
+      background-color: transparent
+      border: 1px solid $orang
+    &-btn
+      padding: 0.9rem 3.9rem
+    
+.cosiac-facebook
+  &::before    
+    background-image: url('assets/images/icons/fill-212.svg')
+.cosiac-twitter
+  &::before
+    background-image: url('assets/images/icons/fill-173.svg')
+.cosiac-instagram
+  &::before
+    background-image: url('assets/images/icons/fill-167.svg')
+.cosiac-youtube
+  &::before
+    background-image: url('assets/images/icons/fill-214.svg')
+       
+    

@@ -163,15 +163,15 @@ h1 {
   margin-left: 6.3rem;
 }
 
-.header__item {
+.nav-item {
   display: inline-block;
 }
 
-.header__item + li {
+.nav-item + li {
   margin-left: 5.8rem;
 }
 
-.header__link:hover {
+.nav-link:hover {
   color: #F9804B;
 }
 
@@ -619,4 +619,103 @@ h1 {
   line-height: 120%;
   max-height: 30.9rem;
   overflow: hidden;
+}
+
+.footer {
+  padding: 4rem 0 5rem;
+  background-color: #111115;
+  color: #fff;
+}
+
+.footer__inner-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin-bottom: 3.6rem;
+}
+
+.footer__inner-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 4.4rem 0 5rem;
+}
+
+.footer__inner-item + li {
+  margin-top: 1rem;
+}
+
+.footer__inner-item a {
+  display: inline-block;
+  padding-left: 3.8rem;
+  position: relative;
+}
+
+.footer__inner-item a::before {
+  content: '';
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #767474;
+  background-repeat: no-repeat;
+  background-position: center center;
+  left: 0;
+}
+
+.footer__inner-designed {
+  max-width: 23.5rem;
+  line-height: 2.08rem;
+  font-weight: 300;
+}
+
+.footer__inner-designed span {
+  display: block;
+  margin-top: 1rem;
+}
+
+.footer__form-titel {
+  margin-bottom: 1.4rem;
+  font-size: 2.4rem;
+  line-height: 120%;
+  font-weight: 400;
+}
+
+.footer__form-email {
+  padding: 1rem 0.7rem 1rem 1rem;
+  margin-right: 1rem;
+  background-color: transparent;
+  border: 1px solid #F9804B;
+}
+
+.footer__form-btn {
+  padding: 0.9rem 3.9rem;
+}
+
+.cosiac-facebook::before {
+  background-image: url("assets/images/icons/fill-212.svg");
+}
+
+.cosiac-twitter::before {
+  background-image: url("assets/images/icons/fill-173.svg");
+}
+
+.cosiac-instagram::before {
+  background-image: url("assets/images/icons/fill-167.svg");
+}
+
+.cosiac-youtube::before {
+  background-image: url("assets/images/icons/fill-214.svg");
 }
