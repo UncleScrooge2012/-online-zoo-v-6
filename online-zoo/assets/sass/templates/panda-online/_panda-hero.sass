@@ -1,11 +1,14 @@
 .panda-main
   position: relative
-  
+  &__inner
+    position: absolute
+    left: 0 
+    height: 100%
+    padding: 11.2rem 3rem 50rem 3rem
+    
 .said-bar
-  margin-left: 3rem  
-  position: absolute
- 
-  top: 184px
+  position: sticky
+  top: 0
   background: linear-gradient( 315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);   
   opacity: 0.9
   max-width: 9.9rem
@@ -15,6 +18,7 @@
   &__item    
     width: 8rem
     height: 8rem
+    border: 1px solid $orang
     border-radius: 50%
     background-color: $white
     display: flex
@@ -22,6 +26,13 @@
     align-items: center
     & + li 
       margin-top: 1rem
+    &:hover
+      border-color: $green
+      & svg path
+        fill: $green
+      & svg circle
+        stroke: $green
+      
 
 .panda-hero
   padding: 4rem 0 10rem
@@ -64,3 +75,7 @@
       &:hover
         background-color: $green
 
+.said-bar--active 
+  border-color: $green
+  & svg path
+    fill: $green
