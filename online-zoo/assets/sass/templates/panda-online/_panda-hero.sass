@@ -1,0 +1,66 @@
+.panda-main
+  position: relative
+  
+.said-bar
+  margin-left: 3rem  
+  position: absolute
+ 
+  top: 184px
+  background: linear-gradient( 315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);   
+  opacity: 0.9
+  max-width: 9.9rem
+  border-radius: 0.5rem
+  padding: 1.6rem 1rem 1.6rem 0.9rem
+
+  &__item    
+    width: 8rem
+    height: 8rem
+    border-radius: 50%
+    background-color: $white
+    display: flex
+    justify-content: center
+    align-items: center
+    & + li 
+      margin-top: 1rem
+
+.panda-hero
+  padding: 4rem 0 10rem
+  
+  &__titel
+    margin-bottom: 1rem
+    font-weight: 400
+    line-height: 120%
+    font-size: 4.8rem
+
+  &__slider
+    padding-top: 8rem
+    position: relative
+
+    &-list
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+    
+    &-left
+      left: -82px
+      top: 50%
+
+    &-right
+      right: -82px
+      top: 50%
+    
+    &-left, &-right
+      width: 62px
+      height: 62px
+      border-radius: 50%
+      
+      display: flex
+      position: absolute
+      justify-content: center
+      align-items: center
+      background-color: $orang
+      cursor: pointer
+
+      &:hover
+        background-color: $green
+

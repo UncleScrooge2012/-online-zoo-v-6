@@ -29,7 +29,7 @@ gulp.task('style', function(){
 
 
 gulp.task('html', function(){
-	return gulp.src('online-zoo/*.html')
+	return gulp.src('online-zoo/*.html/assets/html/*.html')
 		.pipe(browserSync.reload({streem: true}))
 });
 
